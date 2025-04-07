@@ -1,4 +1,4 @@
-## Git versiohallinnan käytöstä
+## 📜Git versiohallinta
 
 Luodaan ensin uusi *Projekti* niminen kansio/hakemisto esim. *Tiedostot* hakemistoon.  
 `md %userprofile%\documents`  
@@ -216,8 +216,3 @@ Tehdään muutoksia paikalliseen hakemistoon
 Lisätään ja commitoidaan  muutokset  
 Työnnetään muutokset omaan forkkiin  
 `git push` tai `git push origin`  
-
-Luodaan *Pull request*  
-
-
-
