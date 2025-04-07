@@ -1,3 +1,4 @@
+## 📟 tmux terminal multiplexer
 ![image](https://github.com/user-attachments/assets/ddc724bc-ec37-4d8a-b5b3-150cf786f19a)
 
 ### Commands
