@@ -138,3 +138,47 @@ NoSQL-tietokannat jaetaan neljään päätyyppiin:
 > **Yhteenveto:**  
 > NoSQL tarjoaa tehokkaan ja joustavan tavan käsitellä dynaamista ja suurivolyymista dataa, mutta sen käyttö vaatii usein erilaista ajattelutapaa kuin relaatiotietokannoissa.
 
+# 🔄 Relaatiotietokannat vs. NoSQL – Vertailu
+
+Tässä taulukossa vertaillaan relaatiotietokantoja ja NoSQL-tietokantoja keskeisiltä osa-alueilta:
+
+| Ominaisuus                | Relaatiotietokanta (SQL)                     | NoSQL-tietokanta                              |
+|---------------------------|----------------------------------------------|-----------------------------------------------|
+| **Tietomalli**            | Taulut (rivit ja sarakkeet)                  | Dokumentit, avain-arvot, sarakkeet, graafit   |
+| **Skeema**                | Kiinteä ja ennalta määritelty               | Joustava, voi vaihdella dokumenteittain       |
+| **Kyselykieli**           | SQL                                          | Vaihtelee – ei yhtenäistä standardia          |
+| **Skaalautuvuus**         | Vertikaalinen (yleensä yksi tehokas palvelin) | Horisontaalinen (helppo hajautus useille solmuille) |
+| **Transaktiot (ACID)**    | Täysi ACID-tuki                              | Rajoitettu tai CAP-teorian mukainen valinta   |
+| **Suhteet tietojen välillä** | Erittäin hyvät (JOINit, viiteavaimet)     | Rajoitetut tai mallinnetaan eri tavoin        |
+| **Soveltuvuus**           | Rakenne tarkkaan määritelty, perinteinen data | Dynaaminen, nopeasti muuttuva tai hajautettu data |
+| **Yleisiä esimerkkejä**   | MySQL, PostgreSQL, Oracle, SQL Server       | MongoDB, Redis, Cassandra, Neo4j              |
+
+---
+
+## 📘 Esimerkkitilanne: Tuotetiedot verkkokaupassa
+
+### 🗃️ Relaatiotietokanta (esim. PostgreSQL)
+
+Tietorakenne:
+
+```sql
+-- Tuotetaulu
+CREATE TABLE Tuotteet (
+  TuoteID SERIAL PRIMARY KEY,
+  Nimi TEXT,
+  Hinta DECIMAL,
+  Varastosaldo INT
+);
+
+-- Tuotekategoriat erillisessä taulussa
+CREATE TABLE Kategoriat (
+  KategoriaID SERIAL PRIMARY KEY,
+  Nimi TEXT
+);
+
+-- Tuotteen ja kategorian välinen yhteys
+CREATE TABLE TuoteKategoriat (
+  TuoteID INT REFERENCES Tuotteet(TuoteID),
+  KategoriaID INT REFERENCES Kategoriat(KategoriaID)
+);
+```
