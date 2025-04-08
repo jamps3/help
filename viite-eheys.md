@@ -1,18 +1,18 @@
 # SQL: Viite-eheys
 
 ## 🔍 1. Viite-eheys relaatiotietokannassa
-Viite-eheys (referential integrity) on yksi relaatiotietokantojen neljästä keskeisestä eheystyypistä (domain, entity, referential, user-defined). Se keskittyy siihen, että viittaus toisen taulun tietueeseen on aina kelvollinen.
-Se on tietokantojen sääntö, jonka tarkoituksena on varmistaa, että vierasavaimet viittaavat olemassa oleviin tietueisiin toisessa taulussa. Se ylläpitää tiedon johdonmukaisuutta ja estää virheelliset viittaukset taulujen välillä.
+`Viite-eheys` (referential integrity) on yksi relaatiotietokantojen neljästä keskeisestä eheystyypistä (domain, entity, referential, user-defined). Se keskittyy siihen, että viittaus toisen taulun tietueeseen on aina kelvollinen.
+Se on tietokantojen sääntö, jonka tarkoituksena on varmistaa, että vierasavaimet viittaavat olemassa oleviin tietueisiin toisessa taulussa. Se ylläpitää tiedon johdonmukaisuutta ja `estää virheelliset viittaukset taulujen välillä.`
 Ilman viite-eheyttä voisi syntyä tilanteita, joissa esimerkiksi tilaus on tehty asiakkaalle, jota ei ole olemassa – tämä rikkoo tietokannan loogista rakennetta.
 
 ## 🧩 2. Vierasavaimen määrittely ja säännöt
-Vierasavain voi viitata vain ensisijaiseen avaimeen tai yksilölliseen (UNIQUE) kenttään toisessa taulussa.
-Viitattu rivi täytyy olla olemassa ennen kuin vierasavaimeen viittaava rivi lisätään.
-Et voi poistaa viitattua riviä, jos siihen viitataan vierasavaimella, ellei käytössä ole esim. ON DELETE CASCADE.
+`Vierasavain` voi viitata vain `ensisijaiseen avaimeen` tai `yksilölliseen (UNIQUE) kenttään` toisessa taulussa.
+`Viitattu rivi täytyy olla olemassa` ennen kuin vierasavaimeen viittaava rivi lisätään.
+`Et voi poistaa` viitattua `riviä, jos siihen viitataan` vierasavaimella, ellei käytössä ole esim. `ON DELETE CASCADE`.
 
 ### 🔗 Keskeiset käsitteet
-- **Ensisijainen avain (PRIMARY KEY)**: Yksilöllinen tunniste jokaiselle riville taulussa.
-- **Vierasavain (FOREIGN KEY)**: Sarake, joka viittaa toisen taulun ensisijaiseen avaimeen.
+- **Ensisijainen avain (`PRIMARY KEY`)**: Yksilöllinen tunniste jokaiselle riville taulussa.
+- **Vierasavain (`FOREIGN KEY`)**: Sarake, joka viittaa toisen taulun ensisijaiseen avaimeen.
 
 ## 🔁 3. Käyttäytyminen muutostilanteissa
 Kun viitattu tieto muuttuu (päivitetään tai poistetaan), tietokannan on tehtävä jotain, jotta viite-eheys säilyy.
@@ -27,8 +27,8 @@ Kun viitattu tieto muuttuu (päivitetään tai poistetaan), tietokannan on teht�
 
 ## 📘 4. Esimerkki käytännön tilanteesta
 Ajatellaan verkkokaupan tietokantaa:
-Taulu Tuotteet: sisältää tuotetiedot
-Taulu Tilausrivit: jokainen rivi vastaa yhtä tilattua tuotetta
+Taulu `Tuotteet`: sisältää tuotetiedot
+Taulu `Tilausrivit`: jokainen rivi vastaa yhtä tilattua tuotetta
 
 ```sql
 CREATE TABLE Tuotteet (
@@ -82,6 +82,18 @@ Jos asiakas poistetaan `Asiakkaat`-taulusta, kaikki hänen tilauksensa poistetaa
 - ✅ Ylläpidettävyys: Vähemmän manuaalista virheiden tarkistusta sovelluskoodissa.
 - ✅ Automaattinen käyttäytyminen: Voi säästää aikaa ja vähentää bugeja esim. poistoketjuissa.
 - ✅ Tietoturva: Estetään tahattomat datan katkokset.
+
+```
++-----------+       REFERENCES        +-----------+
+| Customers |------------------------>| Orders    |
++-----------+                         +-----------+
+| CustomerID| (Primary Key)           | OrderID   |
+| Name      |                         | CustomerID| (Foreign Key)
++-----------+                         | Date      |
+                                      +-----------+
+```
+- `Customers`-taulussa on yksilöllinen avain (Primary Key) kentässä `CustomerID`.
+- `Orders`-taulu sisältää viittausavaimen (Foreign Key) `CustomerID`, joka viittaa `Customers`-tauluun, varmistaaen että jokaisella tilauksella on olemassaoleva asiakas.
 
 ## 📚 Lähteet
 
