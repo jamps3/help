@@ -9,6 +9,7 @@ Hyödyllisiä komentoja ja apuja ohjelmointiin yms. / Helpful commands and cheat
 # Ohjeet
 ## 📜[Git versiohallinta](https://github.com/jamps3/help/blob/main/git.md)
 ## 📜[Relaatiotietokannat](https://github.com/jamps3/help/blob/main/relaatiotietokannat.md)
+## 📜[SQL](https://github.com/jamps3/help/blob/main/sql.md)
 ## 📜[Markdown (nämä sivut)](https://github.com/jamps3/help/blob/main/markdown.md)
 
 # Tietoturva
