@@ -1,4 +1,4 @@
-# Yleisimmät komennot SQL-kyselyissä ovat:
+# SQL komennot
 
 | Komento | Selitys |
 | ----------- | ----------- |
