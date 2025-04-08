@@ -1,3 +1,4 @@
+# Relaatiotietokannat ja NoSQL
 # Relaatiotietokannat – Tiivistelmä
 
 ## 📘 Mikä on relaatiotietokanta?
@@ -81,4 +82,59 @@ VALUES (102, 1, '2025-04-08');
 ---
 
 > Hyödyt painottuvat rakenteiseen, ennustettavaan ja tarkasti hallittuun tietoon. Haitat korostuvat dynaamisissa ja erittäin skaalautuvissa ympäristöissä.
+
+# 🗂️ NoSQL-tietokannat – Tiivistelmä
+
+## 📘 Mikä on NoSQL?
+
+**NoSQL (Not Only SQL)** viittaa tietokantamalleihin, jotka **eivät noudata relaatiomallia**. Ne on suunniteltu käsittelemään **suuria määriä hajautettua, joustavaa ja usein puolistrukturoitua dataa**. 
+
+NoSQL-tietokannat eivät käytä tauluja ja SQL-kieltä samalla tavalla kuin relaatiotietokannat – ne tukevat erilaisia malleja ja voivat olla hyvin skaalautuvia.
+
+---
+
+## 🧩 NoSQL-mallit
+
+NoSQL-tietokannat jaetaan neljään päätyyppiin:
+
+1. **Dokumenttipohjaiset** (esim. MongoDB)  
+   - Tiedot tallennetaan JSON- tai BSON-dokumentteina.
+2. **Avain-arvo -pohjaiset** (esim. Redis, DynamoDB)  
+   - Tieto tallennetaan yksinkertaisina avain-arvo -pareina.
+3. **Saraketietokannat** (esim. Apache Cassandra)  
+   - Optimoitu suurten datamäärien käsittelyyn sarakekohtaisesti.
+4. **Graafitietokannat** (esim. Neo4j)  
+   - Suunniteltu monimutkaisten suhteiden (solmujen ja kaarien) mallintamiseen.
+
+---
+
+## ✅ NoSQL:n hyödyt
+
+- **Skaalautuvuus:** Helppo hajauttaa horisontaalisesti (usealle palvelimelle).
+- **Joustava skeema:** Ei vaadi kiinteää rakennetta – soveltuu muuttuvaan dataan.
+- **Korkea suorituskyky:** Erityisesti suurten luku- ja kirjoitusmäärien käsittelyyn.
+- **Parempi tuki hajautetuille järjestelmille:** Hyvä valinta pilvipohjaisiin sovelluksiin.
+
+---
+
+## ⚠️ NoSQL:n haitat
+
+- **Vähemmän standardoitu:** Ei yhtä yhtenäistä kyselykieltä kuin SQL.
+- **Rajoitettu transaktiotuki:** Joissain järjestelmissä puutteellinen ACID-tuki.
+- **Monimutkaisempi tiedon eheyden hallinta:** Viiteavaimia ja rajoitteita ei aina ole.
+- **Vähemmän tuttu perinteisille kehittäjille:** SQL on yhä standardi monessa ympäristössä.
+
+---
+
+## 💡 Käyttökohteita
+
+- Reaaliaikaiset sovellukset (esim. chatti, pelit)
+- Suurten datamäärien analytiikka
+- Hajautetut web-palvelut
+- Sovellukset, joissa tietorakenne vaihtelee nopeasti
+
+---
+
+> **Yhteenveto:**  
+> NoSQL tarjoaa tehokkaan ja joustavan tavan käsitellä dynaamista ja suurivolyymista dataa, mutta sen käyttö vaatii usein erilaista ajattelutapaa kuin relaatiotietokannoissa.
 
