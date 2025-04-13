@@ -11,6 +11,7 @@ Hyödyllisiä komentoja ja apuja ohjelmointiin yms. / Helpful commands and cheat
 ## 📜[Relaatiotietokannat](https://github.com/jamps3/help/blob/main/relaatiotietokannat.md)
 ## 📜[SQL](https://github.com/jamps3/help/blob/main/sql.md)
 ## 📜[Markdown (nämä sivut)](https://github.com/jamps3/help/blob/main/markdown.md)
+## 📜[Linux komennot](https://github.com/jamps3/help/blob/main/linux.md)
 
 # Tietoturva
 ## [SQL Injection](https://github.com/jamps3/help/blob/main/sql_injektio.md)
