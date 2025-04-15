@@ -8,7 +8,7 @@
 |INSERT|Taulukkoon syötetään uusi tietue.|
 |UPDATE|Muokataan taulukkoon syötettyä tietoa.|
 |DELETE|Voidaan poistaa tietue taulukosta. Tässäkin komennossa käsiteltävä taulu valitaan komennolla FROM ja tarkennuksia annetaan WHERE-komentoa käyttäen.|
-
+## Apukomennot
 | Apukomento | Selitys|
 |------------|--------|
 |OR|Tai, jompi kumpi ehdoista täytyy täyttyä|
@@ -16,8 +16,11 @@
 |ASC|Nouseva järjestys|
 |DESC|Laskeva järjestys|
 |NOT|Negatiivinen ehto|
+|IN|Useampi arvo WHERE komennossa Esim. WHERE Country IN ('Germany', 'France', 'UK');|
+|BETWEEN|Valitaan arvot, Esim. WHERE Price BETWEEN 15 AND 20;|
+|YEAR|Poimitaan vuosiluku päivämäärästä Esim. YEAR(päivämäärä_tietue)|
 
-Esim. ASIAKAS-taulukko, kentät:
+## Esim. ASIAKAS-taulukko, kentät:
 ```sql
 ASIAKASNUMERO, laskuri
 ETUNIMI, teksti
@@ -25,6 +28,7 @@ SUKUNIMI, teksti
 PUHELIN, teksti
 PALKKA, luku
 ```
+## Esimerkkilauseita
 ```sql
 SELECT * FROM Customers WHERE Country="Sweden";
 INSERT INTO ASIAKAS(ETUNIMI, SUKUNIMI,PUHELIN) VALUES(’Jarkko’, ’Turpeinen’,’123456’);
@@ -36,20 +40,15 @@ SELECT CustomerID, CustomerName, Country
 FROM Customers
 WHERE Country="Finland";
 ```
+| Lause | Selitys |
+|-------|---------|
+|SELECT CustomerID, CustomerName, Country|Valitse kentät CustomerID, CustomerName, Country|
+|FROM Customers|Taulusta Customers|
+|WHERE Country='Sweden'|Joiden Country on Sweden|
+|ORDER BY CustomerName DESC;|Järjestä CustomerName mukaan LASKEVASSA järjestyksessä|
+
 ```
-Valitse kentät CustomerID, CustomerName, Country
-Taulusta Customers
-Joiden Country on Sweden
-Järjestä CustomerName mukaan LASKEVASSA järjestyksessä
-```
-```sql
-SELECT CustomerID, CustomerName, Country
-FROM Customers
-WHERE Country='Sweden'
-ORDER BY CustomerName DESC;
-```
-```
-Komennoissa toimivat hipsut: ', "
+Komennoissa toimivat hipsut: ' ja "
 Nämä eivät käy: `
 ```
 # [SQL Tutorial @ w3schools.com](https://www.w3schools.com/sql/)
