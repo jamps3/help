@@ -35,10 +35,16 @@ INSERT INTO ASIAKAS(ETUNIMI, SUKUNIMI,PUHELIN) VALUES(’Jarkko’, ’Turpeinen
 UPDATE ASIAKAS SET PALKKA = PALKKA + 150  WHERE ETUNIMI=’Matti’;
 DELETE FROM ASIAKAS WHERE ASIAKASNUMERO=110;
 ```
+Hae kentät 'CustomerID', 'CustomerName', 'Country' taulusta 'Customers' joiden 'Country' on 'Finland':
 ```sql
 SELECT CustomerID, CustomerName, Country
 FROM Customers
 WHERE Country="Finland";
+```
+Lisää 'Email' tauluun sarake 'Customers' jonka tyyppi on varchar(255):
+```sql
+ALTER TABLE Customers
+ADD Email varchar(255);
 ```
 | Lause | Selitys |
 |-------|---------|
