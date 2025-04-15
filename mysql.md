@@ -46,6 +46,12 @@ Lisää 'Email' tauluun sarake 'Customers' jonka tyyppi on varchar(255):
 ALTER TABLE Customers
 ADD Email varchar(255);
 ```
+Hae kirjat joiden Title on näiden kahden kirjan otsikoiden välissä:
+```sql
+SELECT Title
+FROM Books
+WHERE Title BETWEEN 'Brave New World' AND 'Pride and Prejudice';
+```
 | Lause | Selitys |
 |-------|---------|
 |SELECT CustomerID, CustomerName, Country|Valitse kentät CustomerID, CustomerName, Country|
@@ -53,6 +59,8 @@ ADD Email varchar(255);
 |WHERE Country='Sweden'|Joiden Country on Sweden|
 |ORDER BY CustomerName DESC;|Järjestä CustomerName mukaan LASKEVASSA järjestyksessä|
 
+## Hipsut!
+Kaikki hipsut eivät toimi ja joskus toiset toimivat ja toiset eivät, tässä yleisimmät.
 ```
 Komennoissa toimivat hipsut: ' ja "
 Nämä eivät käy: `
