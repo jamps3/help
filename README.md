@@ -12,6 +12,7 @@ Hyödyllisiä komentoja ja apuja ohjelmointiin yms. / Helpful commands and cheat
 ## 📜[MySQL](https://github.com/jamps3/help/blob/main/mysql.md)
 ## 📜[Markdown (nämä sivut)](https://github.com/jamps3/help/blob/main/markdown.md)
 ## 📜[Linux komennot](https://github.com/jamps3/help/blob/main/linux.md)
+## 📜[HTTP-statuskoodit](https://github.com/jamps3/help/blob/main/http.md)
 ***
 # Tietoturva
 ## [SQL Injection](https://github.com/jamps3/help/blob/main/sql_injektio.md)
