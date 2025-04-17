@@ -19,7 +19,12 @@ React on JavaScript-kirjasto käyttöliittymien rakentamiseen. Se on komponentti
 
 ## 🔧 Peruskäyttö
 
-### 1. Asennus (esim. Vite-projekti)
+### 1. Skriptien salliminen
+Jos npm komento ei toimi voi syynä olla ettei skriptien ajamista ole sallittu. Tällöin pitää ajaa seuraava komento Administrator-oikeuksin:
+```bash
+Set-ExecutionPolicy RemoteSigned
+```
+### 2. Asennus (esim. Vite-projekti)
 ```bash
 npm create vite@latest my-app --template react
 cd my-app
@@ -27,7 +32,7 @@ npm install
 npm run dev
 ```
 
-### 2. JSX
+### JSX
 - JSX on JavaScriptin laajennos, jolla voi kirjoittaa HTML:n kaltaista syntaksia.
 ```jsx
 const element = <h1>Hello, world!</h1>;
