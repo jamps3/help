@@ -1,5 +1,7 @@
 # /help 🆘🔧🔧🔧💾
-Hyödyllisiä komentoja ja apuja ohjelmointiin yms. / Helpful commands and cheat sheets for programming and more.
+|||
+|-|-|
+|Hyödyllisiä komentoja ja apuja ohjelmointiin yms.|Helpful commands and cheat sheets for programming and more.|
 ***
 # Ohjelmistot
 ## 📟[tmux](https://github.com/jamps3/help/blob/main/tmux.md)
