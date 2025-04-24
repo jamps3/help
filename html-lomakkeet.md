@@ -33,7 +33,7 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 <input type="range" min="100" max="500" step="100" id="puhhinta" name="puhhinta" />
 <input type="url" />
 ```
-## Ajanilmaukset
+## ⏰ Ajanilmaukset
 ```html
 <input type="time" name="Aika" />
 <input type="date" name="Päivä" />
