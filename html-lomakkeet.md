@@ -146,6 +146,51 @@ Käytä `label`-elementtejä parantamaan käytettävyyttä:
 
 ---
 
+# `<fieldset>` ja `<legend>`
+
+HTML:n `<fieldset>`- ja `<legend>`-elementtejä käytetään ryhmittelemään lomakkeen kenttiä loogisesti ja parantamaan saavutettavuutta.
+
+---
+
+## 🔹 `<fieldset>`
+
+`<fieldset>`-elementti luo visuaalisen ja loogisen kehyksen kenttäryhmälle.
+
+```html
+<fieldset>
+  <legend>Henkilötiedot</legend>
+  <label for="nimi">Nimi:</label>
+  <input type="text" id="nimi" name="nimi" required />
+  <label for="ika">Ikä:</label>
+  <input type="number" id="ika" name="ika" />
+</fieldset>
+```
+
+---
+
+## 🔸 `<legend>`
+
+`<legend>` antaa kuvauksen `<fieldset>`in sisällöstä.
+
+- Asetetaan ensimmäiseksi elementiksi `<fieldset>`-elementin sisälle.
+- Parantaa saavutettavuutta, erityisesti apuvälinekäytössä.
+
+```html
+<fieldset>
+  <legend>Yhteystiedot</legend>
+  <!-- Kentät tähän -->
+</fieldset>
+```
+
+---
+
+## 🔍 Vinkkejä käytöstä
+
+- Käytä lomakkeissa, joissa on useita osioita (esim. henkilötiedot, maksutiedot).
+- Yhdistä `fieldset + legend` saavutettavuusparannuksina `label`- ja `aria`-attribuuttien kanssa.
+
+---
+
 ## 📚 Lisätietoa
 
 - [MDN: HTML forms](https://developer.mozilla.org/en-US/docs/Learn/Forms)
