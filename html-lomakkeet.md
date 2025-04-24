@@ -31,7 +31,7 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 ## 📝 Tekstialue
 
 ```html
-<textarea name="viesti" rows="5" cols="30"></textarea>
+<textarea name="viesti" rows="5" cols="30" maxlength="500" wrap="soft"></textarea>
 ```
 
 ## 🔽 Valintalista
