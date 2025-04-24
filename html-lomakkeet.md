@@ -38,8 +38,10 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 
 ```html
 <select name="kieli">
-  <option value="fi">Suomi</option>
-  <option value="en">Englanti</option>
+  <optgroup label="Kielet">
+    <option value="fi">Suomi</option>
+    <option value="en">Englanti</option>
+  </optgroup>
 </select>
 ```
 
