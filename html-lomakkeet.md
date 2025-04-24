@@ -16,6 +16,24 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 - `method`: `GET` (tiedot URL-osoitteessa) tai `POST` (tiedot HTTP-pyynnön rungossa).
 
 ---
+## 📋 `<form>`-elementin yleisimmät alielementit
+
+| Elementti      | Kuvaus                                           |
+|----------------|--------------------------------------------------|
+| `<input>`      | Monikäyttöinen kenttä, tyyppi määritetään `type`-attribuutilla |
+| `<textarea>`   | Monirivinen tekstikenttä                         |
+| `<select>`     | Valintalista                                     |
+| `<option>`     | Valintalistan yksittäinen vaihtoehto              |
+| `<label>`      | Kentän selite, linkitetään `for`-attribuutilla   |
+| `<button>`     | Painike (voi olla lähetä, nollaa tai oma toiminto) |
+| `<fieldset>`   | Ryhmittelee kenttiä loogisesti                    |
+| `<legend>`     | Kuvaa `fieldset`-ryhmän tarkoituksen              |
+| `<datalist>`   | Määrittelee vaihtoehdot `input`-kenttään          |
+| `<output>`     | Näyttää laskennallisen tuloksen                  |
+| `<meter>`      | Edistyksen/arvon graafinen näyttö                 |
+| `<progress>`   | Edistymispalkki                                  |
+| `<keygen>`     | Luo julkisen/privaatin avainparin lomakkeeseen liittyvää salausta varten (vanhentunut!) <br>Sen sijaan, että avaimet luotaisiin HTML-elementillä, käytetään nyt JavaScriptin Web Crypto API:a, joka mahdollistaa turvallisten avainparien generoinnin ohjelmallisesti.|
+---
 
 ## 🔡 Yleisimmät syötekentät
 
