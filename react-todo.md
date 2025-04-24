@@ -18,7 +18,7 @@ npm -v
 ### Luo uusi React-projekti
 
 ```bash
-npx create-react-app todo-app
+npm create vite@latest todo-app --- --template react-swc-ts
 cd todo-app
 npm start
 ```
