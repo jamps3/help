@@ -20,8 +20,9 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 ## 🔡 Yleisimmät syötekentät
 
 ```html
-<input type="text" name="Nimi" />
+<input type="text" name="Nimi" size="20" maxlength="50" value="..." readonly />
 <input type="email" name="Sähköposti" />
+<input type="tel" name="puhelin" pattern="\+?[0-9 () \-]+" />
 <input type="password" name="Salasana" />
 <input type="checkbox" name="Uutiskirje" />
 <input type="radio" name="sukupuoli" value="mies" />
@@ -30,6 +31,7 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 <input type="color" id="vari" name="vari" />
 <input type="number" value="8" min="4" max="10" id="koe" name="koe" />
 <input type="range" min="100" max="500" step="100" id="puhhinta" name="puhhinta" />
+<input type="url" />
 ```
 ## Ajanilmaukset
 ```html
