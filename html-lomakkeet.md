@@ -20,12 +20,22 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 ## 🔡 Yleisimmät syötekentät
 
 ```html
-<input type="text" name="nimi" />
-<input type="email" name="sahkoposti" />
-<input type="password" name="salasana" />
-<input type="checkbox" name="uutiskirje" />
+<input type="text" name="Nimi" />
+<input type="email" name="Sähköposti" />
+<input type="password" name="Salasana" />
+<input type="checkbox" name="Uutiskirje" />
 <input type="radio" name="sukupuoli" value="mies" />
 <input type="submit" value="Lähetä" />
+<input type="reset" value="Tyhjennä" />
+```
+## Ajanilmaukset
+```html
+<input type="time" name="Aika" />
+<input type="date" name="Päivä" />
+<input type="datetime" name="Aika ja päivä" />
+<input type="datetime-local" name="Paikallinen aika" />
+<input type="month" name="Kuukausi" />
+<input type="week" name="Viikko" />
 ```
 
 ## 📝 Tekstialue
