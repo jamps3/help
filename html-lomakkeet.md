@@ -27,6 +27,9 @@ HTML-lomakkeet ovat keskeinen osa verkkosivujen käyttäjävuorovaikutusta. Niid
 <input type="radio" name="sukupuoli" value="mies" />
 <input type="submit" value="Lähetä" />
 <input type="reset" value="Tyhjennä" />
+<input type="color" id="vari" name="vari" />
+<input type="number" value="8" min="4" max="10" id="koe" name="koe" />
+<input type="range" min="100" max="500" step="100" id="puhhinta" name="puhhinta" />
 ```
 ## Ajanilmaukset
 ```html
