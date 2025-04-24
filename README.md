@@ -15,6 +15,7 @@
 ## 📜[Markdown (nämä sivut)](https://github.com/jamps3/help/blob/main/markdown.md)
 ## 📜[Linux komennot](https://github.com/jamps3/help/blob/main/linux.md)
 ## 📜[HTTP-statuskoodit](https://github.com/jamps3/help/blob/main/http.md)
+## 📜[HTML-lomakkeet](https://github.com/jamps3/help/blob/main/html-lomakkeet.md)
 ## 📜[React](https://github.com/jamps3/help/blob/main/react.md)
 ***
 # Tietoturva
